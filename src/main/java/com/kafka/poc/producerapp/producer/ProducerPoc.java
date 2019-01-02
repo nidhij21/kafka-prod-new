@@ -14,7 +14,7 @@ import org.apache.kafka.clients.producer.RecordMetadata;
 import org.springframework.stereotype.Component;
 @Component
 public class ProducerPoc {
-	@PostConstruct
+	
 	public void init(){
 		Properties props = new Properties();
 	    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.67.171.30:9092");
