@@ -17,7 +17,7 @@ public class ProducerPoc {
 	@PostConstruct
 	public void init(){
 		Properties props = new Properties();
-	    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.131.126.77:9092");
+	    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "203.34.117.152:9092");
 	    props.put(ProducerConfig.ACKS_CONFIG, "all");
 	    props.put(ProducerConfig.RETRIES_CONFIG, 0);
 	    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
