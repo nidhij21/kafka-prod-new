@@ -28,7 +28,7 @@ public class ProducerPoc {
 	    Random rnd = new Random();
 	    for (long i = 0; i < 100 ; i++) {
 	        ProducerRecord<String, String> data = new ProducerRecord<String, String>(
-	                "test", "key-" + i, "message-"+i );
+	                "belgacom", "key-" + i, "message-"+i );
 	        producer.send(data, callback);
 	    }
 
